@@ -1,0 +1,225 @@
+<?php // This is a PHP file ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <!--This is the home page of the application. It serves as the landing page for users. -->
+  <!-- Header Section -->
+  <section class="header">
+    <a href="home.html" class="logo">Travel</a>
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="packages.html">Packages</a>
+      <a href="contact.html">Contact</a>
+      <a href="book.html">Book</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <section class="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" style="background: url(images/slide-1.jpg) no-repeat">
+          <div class="content">
+            <span>explore,discover,travel</span>
+            <h3>Travel around the world</h3>
+            <a href="packages.html" class="btn">Discover more</a>
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background: url(images/slide-2.jpg) no-repeat">
+          <div class="content">
+            <span>explore,discover,travel</span>
+            <h3>Discover new places</h3>
+            <a href="packages.html" class="btn">Discover more</a>
+          </div>
+        </div>
+        <div class="swiper-slide slide" style="background: url(images/slide-3.jpg) no-repeat">
+          <div class="content">
+            <span>explore,discover,travel</span>
+            <h3>Make your tour worthwhile</h3>
+            <a href="packages.html" class="btn">Discover more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <!--services section starts here-->
+  <section class="services">
+    <h1 class="heading-title">Our Services</h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="images/service1.jpg" alt="">
+        <h3>Adventure</h3>
+        <p>Unleash your inner explorer with our high-adrenaline adventure packages designed to elevate your journey.</p>
+      </div>
+      <div class="box">
+        <img src="images/service2.jpg" alt="">
+        <h3>Tour Guide</h3>
+        <p>Discover more with our certified tour guides who turn every location into a story worth remembering.</p>
+      </div>
+      <div class="box">
+        <img src="images/service3.jpg" alt="">
+        <h3>Trekking</h3>
+        <p>Take your travel to new heights — literally — with treks that offer jaw-dropping views and unforgettable moments.</p>
+      </div>
+      <div class="box">
+        <img src="images/service4.jpg" alt="">
+        <h3>Camping</h3>
+        <p>Reconnect with nature in style with our premium camping setups, crafted for comfort and experience.</p>
+      </div>
+      <div class="box">
+        <img src="images/service5.jpg" alt="">
+        <h3>Off Road</h3>
+        <p>Conquer untamed trails with off-road tours that redefine what it means to travel wild.</p>
+      </div>
+      <div class="box">
+        <img src="images/service6.jpg" alt="">
+        <h3>Camp fire</h3>
+        <p>Light up your nights with our signature campfire experiences — warmth, stories, and connection guaranteed.</p>
+      </div>
+    </div>
+  </section>
+  <!--services section ends here-->
+  <!-- about section starts here -->
+  <section class="home-about fade-in-up">
+    <div class="image">
+      <img src="images/about-img.jpg" alt="">
+    </div>
+    <div class="content">
+      <h3>About Us</h3>
+      <p>
+        We are passionate travel experts committed to making your journey unforgettable.
+        Our mission is to provide personalized and enriching experiences tailored to your interests.
+      </p>
+      <p>
+        Whether you're seeking adventure, relaxation, or cultural discovery — we've got you covered.
+        Explore the world with us and discover new horizons.
+      </p>
+      <a href="about.html" class="btn">Read more</a>
+    </div>
+  </section>
+  <!-- about section ends here-->
+  <!-- home packages section starts here -->
+  <section class="home-packages">
+    <h1 class="heading">Our Packages</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="box-inner">
+          <div class="front">
+            <img src="images/img-1.jpg" alt="Adventure">
+            <h3>Adventure</h3>
+          </div>
+          <div class="back">
+            <p>Experience thrilling adventures across beautiful landscapes and exotic locations.</p>
+            <a href="book.html" class="btn">Book now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-inner">
+          <div class="front">
+            <img src="images/img-2.jpg" alt="Beach">
+            <h3>Beach Escape</h3>
+          </div>
+          <div class="back">
+            <p>Reconnect with nature in serene settings with our top camping destinations.</p>
+            <a href="book.html" class="btn">Book now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-inner">
+          <div class="front">
+            <img src="images/img-3.jpg" alt="Trekking">
+            <h3>Trekking</h3>
+          </div>
+          <div class="back">
+            <p>Join guided treks through breathtaking trails and challenge yourself in nature.</p>
+            <a href="book.html" class="btn">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="load-more">
+      <a href="packages.html" class="btn">Load More</a>
+    </div>
+  </section>
+  <!-- home packages section ends here --> 
+  <!--home offer section starts here-->
+  <section class="home-offer">
+    <div class="offer-container">
+      <div class="content">
+        <h3>Upto 50% off</h3>
+        <p>Book your next adventure with us and enjoy exclusive discounts on selected packages.</p>
+        <a href="book.html" class="btn">Book now</a>
+      </div>
+      <div class="image">
+        <img src="images/img-5.jpg" alt="Offer Image">
+      </div>
+    </div>
+  </section>
+  <!--home offer section ends here-->
+  <!--footer section starts here..-->
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+        <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+        <a href="packages.html"><i class="fas fa-angle-right"></i>Packages</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+        <a href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+        <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+      </div>
+      <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+      </div>
+      <div class="box">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-phone"></i> +123-456-7890 </p>
+        <p><i class="fas fa-phone"></i> +111-222-3333 </p>
+        <p><i class="fas fa-envelope"></i> travels@gmail.com</p>
+        <p><i class="fas fa-map"></i> Adama, Ethiopia-467382</p>
+      </div>
+      <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+      </div>
+    </div>
+    <div class="credit" style="text-transform: lowercase;">created by<span>Hiba</span>|all rights reserved!</div>
+  </section>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".home-slider", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
