@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ <style>
+  body {
+            background-color: #f8fafc;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 40px;
+            color: #4f46e5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-header h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-header p {
+            color: #6b7280;
+            margin-top: 10px;
+        }
+
+        /* Contact form */
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contact-form label {
+            font-size: 14px;
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #4b5563;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #4f46e5;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form .btn {
+            grid-column: span 2;
+            width: 100%;
+            padding: 12px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form .btn:hover {
+            background-color: #4338ca;
+        }
+
+        /* Contact info section */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .contact-info .info-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 32%;
+        }
+
+        .contact-info .info-card h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+        .contact-info .info-card p {
+            color: #6b7280;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .info-card .icon {
+            color: #4f46e5;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Map section */
+        .map {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 12px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color:#777;
+            color: white;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #ddd;
+        }
+ </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <section class="header">
+        <a href="home.html" class="logo">Travel</a>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="packages.html">Packages</a>
+            <a href="contact.html">Contact</a>
+            <a href="book.html">Book</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </section>
+
+    <div class="container">
+        <!-- Contact Header -->
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>We're here to help! Get in touch with us for any inquiries.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div style="flex: 1;">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div style="flex: 1;">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div style="flex: 1;">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Subject of your inquiry" required>
+            </div>
+
+            <div style="flex: 1 100%;">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Phone Number 1</h3>
+                <p><span class="icon"><i class="ri-phone-line"></i></span> +123-456-7890</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Phone Number 2</h3>
+                <p><span class="icon"><i class="ri-phone-line"></i></span> +111-222-3333</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Email</h3>
+                <p><span class="icon"><i class="ri-mail-line"></i></span> travels@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.367018798247!2d73.04698821516851!3d33.68442022933855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9b26d4b24e77%3A0x3c4641b4648ec270!2sWanderlust%20Travel%20Agency!5e0!3m2!1sen!2s!4v1677263065479!5m2!1sen!2s" loading="lazy"></iframe>
+        </div>
+
+        <!-- Footer -->
+      
+<!--footer section starts here..-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+        <h3>Quick Links</h3>
+        <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+        
+        <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+        <a href="packages.html"><i class="fas fa-angle-right"></i>Packages</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+        <a href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+        <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+        </div>
+    
+        <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+        </div>
+    
+        <div class="box">
+        <h3>Contact Info</h3>
+        <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+        
+        <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+        
+        <p> <i class="fas fa-envelope">travels@gmail.com</i></p>
+        
+        <p> <i class="fas fa-map">Adama,Ethiopia-467382</i></p>
+       </div>
+        <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        
+        </div>
+        </div>
+        <div class="credit" style="text-transform: lowercase;">created by<span>Hiba</span>|all rights reserved!</div>
+</section>
+
+
+</body>
+</html>
