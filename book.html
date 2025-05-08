@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+ 
+</head>
+<body>
+  <!--This is the home page of the application. It serves as the landing page for users. -->
+ <!-- Header Section -->
+ <section class="header">
+  <a href="home.html" class="logo">Travel</a>
+  <nav class="navbar">
+     
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html">Book</a>
+        <a href="login.html">Login</a>   
+        <a href="register.html">Register</a> 
+        
+       
+</nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+   
+</section>
+
+
+
+<div class="heading"  style="background: url(images/book.jpg) no-repeat">
+  <h1>Book now</h1>
+</div>
+
+<!-- booking section starts here -->
+ <section class="booking">
+  <h1 class="heading"  style="font-size: 7rem; ">Book your trip!</h1>
+  <form action="book_form.php" method="post" class="book-form">
+    <div class="flex">
+      <div class="inputBox">
+        <span>Full Name</span>
+        <input type="text" placeholder="Enter your name" name="name" required>
+      </div>
+      <div class="inputBox">
+        <span>Email</span>
+        <input type="email" placeholder="Enter your email" name="email" required>
+      </div>
+      <div class="inputBox">
+        <span>Phone</span>
+        <input type="number" placeholder="Enter your number" name="phone" required>
+      </div>
+      <div class="inputBox">
+        <span>address</span>
+        <input type="text" placeholder="Place name" name="address" required>
+      </div>
+      <div class="inputBox">
+        <span>Where to?</span>
+        <input type="text" placeholder="Place you want to visit" name="location"required>
+      </div>
+      <div class="inputBox">
+        <span>How many?</span>
+        <input type="number" placeholder="Number of guests" name="guests" required>
+      </div>
+      <div class="inputBox">
+        <span>Arrivals</span>
+        <input type="date" name="arrivals" required>
+      </div>
+      <div class="inputBox">
+        <span>Leaving</span>
+        <input type="date" name="leaving" required>
+      </div>
+    </div>
+
+    <input type="submit" value="Submit" class="btn" name="send">
+  </form>
+ </section>
+
+<!--footer section starts here..-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+        <h3>Quick Links</h3>
+        <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+       
+        <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+        <a href="packages.html"><i class="fas fa-angle-right"></i>Packages</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+        <a href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+        <a href="register.html"><i class="fas fa-angle-right"></i>Register</a>
+        </div>
+    
+        <div class="box">
+        <h3>Extra Links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+        <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+        </div>
+    
+        <div class="box">
+        <h3>Contact Info</h3>
+        <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+        
+        <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+        
+        <p> <i class="fas fa-envelope">travels@gmail.com</i></p>
+        
+        <p> <i class="fas fa-map">Adama,Ethiopia-467382</i></p>
+       </div>
+        <div class="box">
+        <h3>Follow us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        
+        </div>
+        </div>
+        <div class="credit" style="text-transform: lowercase;">created by<span>Hiba</span>|all rights reserved!</div>
+</section>
+
+
+  <script src=js/script.js></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html> 
