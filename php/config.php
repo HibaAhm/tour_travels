@@ -1,15 +1,17 @@
 <?php
-// php/config.php
+
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$host = "localhost";
-$port = 3306;
-$user = "root";
-$pass = "Natu1225@5";
-$db   = "travel_site";
 
-$conn = new mysqli($host, $user, $pass, $db, $port);
+$host = "sql213.infinityfree.com"; 
+$user = "if0_38934762";            
+$pass = "1q6RjxZiQkTM";              
+$db   = "if0_38934762_Natati";     
+
+
+$conn = new mysqli($host, $user, $pass, $db);
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
