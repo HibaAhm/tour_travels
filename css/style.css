@@ -21,11 +21,10 @@
   font-family:'Poppins',sans-serif;
   text-decoration:none;
  text-transform: capitalize;
- scroll-behavior:smooth;
 
 }
 html{
- scroll-behavior:smooth;
+ /* scroll-behavior:smooth;*/
   font-size:62.5%;
   overflow-x:hidden;
 }
@@ -35,11 +34,11 @@ html::-webkit-scrollbar{
 }
 html::-webkit-scrollbar-thumb{
   background:var(--main-color);
-  border-radius:1rem;
+ /* border-radius:1rem;*/
 }
 html::-webkit-scrollbar-track{
   background:var(--white-color);
- border-radius:1rem;
+ /* border-radius:1rem;*/
 }
 section{
   padding:5rem 10%;
